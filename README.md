@@ -1,5 +1,5 @@
 <video width="320" height="240" controls>
-  <source src=".https://github.com/Saiful-Lab/cricket-app/blame/541da4f04cf349a1688daf07104347023b61fd44/snapshot/App_Snapshot.mp4" type="video/mp4">
+  <source src="https://github.com/Saiful-Lab/cricket-app/blame/541da4f04cf349a1688daf07104347023b61fd44/snapshot/App_Snapshot.mp4" type="video/mp4">
 </video>
 <!-- <video src="/snapshot/App_Snapshot.mp4"></video> -->
 <!-- https://github.com/Saiful-Lab/cricket-app/blame/541da4f04cf349a1688daf07104347023b61fd44/snapshot/App_Snapshot.mp4 -->
