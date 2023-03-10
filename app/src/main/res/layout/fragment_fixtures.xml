@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.FixturesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/layout_padding">
+
+        <LinearLayout
+            android:id="@+id/layout_fixture_local_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/local_team_image"
+                    android:layout_width="@dimen/fixture_team_image_size"
+                    android:layout_height="@dimen/fixture_team_image_size"
+                    android:contentDescription="@string/team_logo"
+                    android:src="@drawable/player_avater" />
+
+                <TextView
+                    android:id="@+id/local_team_code"
+                    style="@style/Fixtures.Note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bgd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_local_team_run_wicket_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/local_team_run_wicket"
+                    style="@style/Fixtures.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bgd" />
+
+                <TextView
+                    android:id="@+id/local_team_over"
+                    style="@style/Fixtures.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bgd" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_vs"
+            app:tint="?attr/colorPrimary" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_fixture_visitor_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/visitor_team_image"
+                    android:layout_width="@dimen/fixture_team_image_size"
+                    android:layout_height="@dimen/fixture_team_image_size"
+                    android:contentDescription="@string/team_logo"
+                    android:src="@drawable/player_avater" />
+
+                <TextView
+                    android:id="@+id/visitor_team_code"
+                    style="@style/Fixtures.Note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bgd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_visitor_team_run_wicket_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/visitor_team_run_wicket"
+                    style="@style/Fixtures.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bgd" />
+
+                <TextView
+                    android:id="@+id/visitor_team_over"
+                    style="@style/Fixtures.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bgd" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ranking_odi_t20_test"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/black" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+package com.saiful.cricketapp.ui.fragment.matches
+
+import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.saiful.cricketapp.adapter.FixturesMatchAdapter
+import com.saiful.cricketapp.databinding.FragmentFinishedBinding
+import com.saiful.cricketapp.util.Constant.Companion.MATCH_STATUS_FINISHED
+import com.saiful.cricketapp.viewmodels.CricketViewModel
+
+class FinishedFragment : Fragment() {
+    private var _binding: FragmentFinishedBinding? = null
+    private val binding get() = _binding!!
+    private lateinit var viewModel: CricketViewModel
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        _binding = FragmentFinishedBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel = ViewModelProvider(this)[CricketViewModel::class.java]
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val recycler = binding.fixtureRecycler
+        recycler.setHasFixedSize(true)
+        viewModel.fixtureMatches(MATCH_STATUS_FINISHED).observe(viewLifecycleOwner) {
+            Log.d("TAG", "Found! Finished ${it.size} matches")
+            recycler.adapter = FixturesMatchAdapter(it)
+        }
+    }
+}

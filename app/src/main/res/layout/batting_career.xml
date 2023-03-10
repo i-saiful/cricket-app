@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/layout_padding">
+
+    <TextView
+        android:id="@+id/batting_title"
+        style="?attr/textAppearanceSubtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius_smaller"
+        android:backgroundTint="?attr/colorPrimary"
+        android:paddingHorizontal="@dimen/smaller_padding"
+        android:text="@string/odi"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/batting_average"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_balls_faced"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_fifties"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_four"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_fow_balls"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_fow_score"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_highest_inning_score"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_hundreds"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_innings"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_matches"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_not_outs"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_runs_scored"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_six"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+
+    <TextView
+        android:id="@+id/batting_strike_rate"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/_100" />
+</LinearLayout>

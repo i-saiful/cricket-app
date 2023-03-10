@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    bottom navigation style   -->
+    <style name="Widget.CricketApp.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="colorOnPrimary">?attr/colorOnPrimary</item>
+        <item name="android:background">@drawable/bottom_navigation_corner</item>
+    </style>
+
+    <!--    title text view   -->
+    <style name="Title.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:padding">@dimen/small_padding</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <!--    fixtures card title   -->
+    <style name="Fixtures.Title" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/fixtures_match_card</item>
+    </style>
+
+    <!--    fixtures card note   -->
+    <style name="Fixtures.Note" parent="Widget.MaterialComponents.TextView">
+<!--        <item name="android:textSize">@dimen/fixtures_match_card</item>-->
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+</resources>

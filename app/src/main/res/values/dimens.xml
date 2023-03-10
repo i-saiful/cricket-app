@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    navigation    -->
+    <dimen name="bottom_navigation_top_corner">16dp</dimen>
+
+    <!--    padding and margin    -->
+    <dimen name="smaller_padding">4dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="layout_margin_small">8dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+
+    <!--    card padding and margin    -->
+    <dimen name="card_vertical_padding">8dp</dimen>
+    <dimen name="card_horizontal_padding">16dp</dimen>
+
+    <!--    icon    -->
+    <dimen name="icon_size">32dp</dimen>
+
+    <!--    title text size    -->
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="card_text_size">14sp</dimen>
+    <dimen name="fixtures_match_card">16sp</dimen>
+
+    <!--    country image size    -->
+    <dimen name="country_image_size">32dp</dimen>
+    <dimen name="country_padding">16dp</dimen>
+    <dimen name="country_divider_padding">8dp</dimen>
+
+    <!--    ranking button padding    -->
+    <dimen name="ranking_button_padding">8dp</dimen>
+    <dimen name="ranking_button_icon_size">24dp</dimen>
+
+    <!--    ranking list    -->
+    <dimen name="ranking_item_team_image">32dp</dimen>
+    <dimen name="ranking_item_padding">8dp</dimen>
+
+    <!--    fixtures team image    -->
+    <dimen name="fixture_team_image_size">48dp</dimen>
+
+    <!--    series image    -->
+    <dimen name="series_image_list_size">32dp</dimen>
+
+    <!--    series image    -->
+    <dimen name="fixture_team_vs_team_image_size">64dp</dimen>
+    <dimen name="fixture_team_vs_team_ic_image_size">32dp</dimen>
+
+    <!--    commentary  -->
+    <dimen name="commentary_run_score">46dp</dimen>
+
+    <!--    squad image    -->
+    <dimen name="squad_image">36dp</dimen>
+
+    <!--    player profile image    -->
+    <dimen name="player_profile_image">128dp</dimen>
+    <dimen name="player_profile_image_horizontal_layout_size">250dp</dimen>
+</resources>

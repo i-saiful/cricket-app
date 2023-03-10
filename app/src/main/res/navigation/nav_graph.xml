@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/matchesFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.MatchesFragment"
+        android:label="@string/matches"
+        tools:layout="@layout/fragment_matches" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.MoreFragment"
+        android:label="@string/more"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.SeriesFragment"
+        android:label="@string/series"
+        tools:layout="@layout/fragment_series" />
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.TeamFragment"
+        android:label="@string/team"
+        tools:layout="@layout/fragment_team" />
+    <fragment
+        android:id="@+id/odiFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.ranking.MenFragment"
+        android:label="@string/men"
+        tools:layout="@layout/fragment_men" />
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.RankingFragment"
+        android:label="@string/rankings"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.PlayerFragment"
+        android:label="@string/player"
+        tools:layout="@layout/fragment_player" />
+    <fragment
+        android:id="@+id/playerInfoFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.PlayerInfoFragment"
+        android:label="@string/player"
+        tools:layout="@layout/fragment_player_info">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fixturesFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.FixturesFragment"
+        android:label="@string/fixtures"
+        tools:layout="@layout/fragment_fixtures">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaguesFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.LeaguesFragment"
+        android:label="@string/leagues"
+        tools:layout="@layout/fragment_leagues">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamMatchFragment"
+        android:name="com.saiful.cricketapp.ui.fragment.TeamMatchFragment"
+        android:label="@string/team_match"
+        tools:layout="@layout/fragment_team_match">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>
