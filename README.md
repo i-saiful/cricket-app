@@ -1,5 +1,4 @@
-[![Watch the video](./snapshot/home.png)](./snapshot/App_Snapshot.mp4)
-
+<video src='./snapshot/App_Snapshot.mp4' width="100%" controls/>
 
 ![Home Feature](./snapshot/home.png)
 ![Fixture Match](./snapshot/fixture.png)
